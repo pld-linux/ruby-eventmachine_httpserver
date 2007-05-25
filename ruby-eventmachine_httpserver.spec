@@ -1,4 +1,5 @@
 Summary:	Ruby event-driven HTTP server
+Summary(pl.UTF-8):	Serwer HTTP sterowany zdarzeniami dla języka Ruby
 Name:		ruby-eventmachine_httpserver
 Version:	0.0.1
 Release:	1
@@ -18,11 +19,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Ruby/EventMachine is a fast, simple event-processing library for Ruby
 programs. It lets you write network clients and servers without
-handling sockets- all you do is send and receive data. Single-threaded
-socket engine- scalable and FAST!
+handling sockets - all you do is send and receive data.
+Single-threaded socket engine - scalable and FAST!
 
 The HTTP Server module makes a simple HTTP server based on the
 EventMachine framework.
+
+%description -l pl.UTF-8
+Ruby/EventMachine to szybka, prosta biblioteka przetwarzania zdarzeń
+dla programów w języku Ruby. Pozwala pisać klientów i serwery sieciowe
+bez obsługi gniazd sieciowych - wystarczy wysyłać i odbierać dane.
+Jednowątkowy silnik gniazd - skalowalny i szybki.
+
+Moduł serwera HTTP to prosty serwer HTTP oparty na szkielecie
+EventMachine.
 
 %prep
 %setup -q -c -T
